@@ -1,0 +1,440 @@
+/* Styles for extra small devices */
+@media only screen and (max-width: 600px) {
+    body{
+        overflow-x: hidden;
+    }
+    #dashboard{
+        --sidebar-width: 0px;
+    }
+    #sidebar-section{
+        width: 260px;
+        transform: translateX(100%);
+        z-index: 200;
+    }
+    #dashboard.sidebar-open #sidebar-section{
+        transform: translateX(0);
+    }
+    #dashboard.sidebar-open .sidebar-overlay{
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: rgba(15, 23, 42, 0.35);
+        z-index: 150;
+    }
+    #dashboard.sidebar-collapsed{
+        --sidebar-width: 0px;
+    }
+    #dashboard.sidebar-collapsed .sidebar-container .sidebar-logo .sidebar-title,
+    #dashboard.sidebar-collapsed .sidebar-container .sidebar-nav .activated .highlight,
+    #dashboard.sidebar-collapsed .sidebar-container .sidebar-nav .deactivated span,
+    #dashboard.sidebar-collapsed .sidebar-container .sidebar-action h3,
+    #dashboard.sidebar-collapsed .sidebar-container .sidebar-action .action-btns span{
+        display: block;
+    }
+    #main-section{
+        margin-right: 0;
+    }
+    .header-sidebar-toggle{
+        display: inline-flex;
+    }
+    #sidebar-section .sidebar-toggle{
+        display: inline-flex;
+    }
+    .main-container{
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    .header{
+        order: -11;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .header .header-logo{
+        flex-direction: column;
+    }
+    .header .header-logo .header-compo{
+        align-self: flex-start;
+    }
+    .header .header-logo .coin{
+        font-size: 17px;
+        width: 48px;
+        height: 48px;
+    }
+    .header .header-logo .header-title h1{
+        font-size: 24px;
+    }
+    .header .header-logo .header-title p{
+        font-size: 12px;
+    }
+    .header .header-statue{
+        width: 100%;
+        flex: 1;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    .header .header-statue .dot{
+        font-size: 6px;
+    }
+    .header .header-statue span{
+        font-size: 12px;
+    }  
+    .header .header-profile{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header .header-profile .header-notification{
+        gap: 6px;
+    }
+    .header .header-profile .header-notification button{
+        font-size: 14px;
+        padding: 10px 8px 10px 8px;
+    }
+    .header .header-profile .header-notification .notification-btn span{
+        padding: 0px 3px;
+        top: -4px;
+        left: 23px;
+    }
+    .header .header-profile .header-pro-details{
+        padding: 8px 3px 8px 8px;
+        align-items: center;
+    }
+    .header .header-profile .header-pro-details .pro-name .pro-identity,
+    .header .header-profile .header-pro-details .pro-name .pro-type{
+        display: none;
+    }
+    .header .header-profile .header-pro-details img{
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+    }
+    .card-1{
+        order: -8;
+    }
+    .card-2{
+        order: -9;
+    }
+    .card-3{
+        order: -10;
+    }
+    .card-1 .expenses-desc,
+    .card-2 .income-desc,
+    .card-3 .current-balance-desc{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    .activity{
+        order: -7;
+        padding: 16px;
+    }
+    .activity .activity-title h3{
+        font-size: 16px;
+    }
+
+    .activity .activity-cards .activity-card1-details .card-details,
+    .activity .activity-cards .activity-card2-details .card2-details{
+        flex: 1; 
+    }
+    .activity .activity-cards .activity-card1-details .card-details span,
+    .activity .activity-cards .activity-card2-details .card2-details span{
+        display:block;
+    }
+    .transformation{
+        padding: 16px;
+    }
+    .transformation .transformation-title h3{
+        font-size: 16px;
+    }
+    .transformation .transformation-title .less{
+        font-size: 8px;
+    }
+    .transformation .transformation-table td {
+        padding: 10px 6px;
+    }
+    .transformation .transformation-table td .user-info{
+        gap: 8px;
+    }
+    .transformation .transformation-title span,
+    .transformation .transformation-table th,
+    .transformation .transformation-table td .user-info .user-name,
+    .transformation .transformation-table .full-date,
+    .transformation .transformation-table td .user-money,
+    .transformation .transformation-table td .user-info .food,
+    .transformation .transformation-table td .user2-money,
+    .transformation .transformation-table td .user-info .shop,
+    .transformation .transformation-table td .user-info .fuel,
+    .transformation .transformation-table td .user-info .film,
+    .transformation .transformation-table td .user-info .fit,
+    .transformation .transformation-table td .user-info .course{
+        font-size: 12px;
+    }
+    .over-view .over-view-card-active .over-view-card-active-details,
+    .over-view .over-view-cards .over-view-card-templete1 .templete1-info,
+    .over-view .over-view-cards .over-view-card-templete2 .templete2-info,
+    .over-view .over-view-cards .over-view-card-templete3 .templete3-info,
+    .over-view .over-view-cards .over-view-card-templete4 .templete4-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .payment .payment-cards .parent{
+        width: 100%;
+    }
+}
+
+/* Styles for small devices */
+@media only screen and (min-width: 600px )and (max-width: 767px) {
+    body{
+        overflow-x: hidden;
+    }
+    #dashboard{
+        --sidebar-width: 0px;
+    }
+    #sidebar-section{
+        width: 260px;
+        transform: translateX(100%);
+        z-index: 200;
+    }
+    #dashboard.sidebar-open #sidebar-section{
+        transform: translateX(0);
+    }
+    #dashboard.sidebar-open .sidebar-overlay{
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: rgba(15, 23, 42, 0.35);
+        z-index: 150;
+    }
+    #dashboard.sidebar-collapsed{
+        --sidebar-width: 0px;
+    }
+    #dashboard.sidebar-collapsed .sidebar-container .sidebar-logo .sidebar-title,
+    #dashboard.sidebar-collapsed .sidebar-container .sidebar-nav .activated .highlight,
+    #dashboard.sidebar-collapsed .sidebar-container .sidebar-nav .deactivated span,
+    #dashboard.sidebar-collapsed .sidebar-container .sidebar-action h3,
+    #dashboard.sidebar-collapsed .sidebar-container .sidebar-action .action-btns span{
+        display: block;
+    }
+    #main-section{
+        margin-right: 0;
+    }
+    .header-sidebar-toggle{
+        display: inline-flex;
+    }
+    .main-container{
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    .header{
+        order: -11;
+    }
+    .header .header-logo .coin{
+        font-size: 17px;
+        width: 48px;
+        height: 48px;
+    }
+    .header .header-logo .header-title h1{
+        font-size: 24px;
+    }
+    .header .header-logo .header-title p,
+    .header .header-statue span{
+        font-size: 12px;
+    }
+    .header .header-statue{
+        gap: 5px;
+        padding: 4px 8px;
+    }
+    .header .header-statue .dot{
+        font-size: 6px;
+    }
+    .header .header-profile,    
+    .header .header-profile .header-notification{
+        gap: 6px;
+    }
+    .header .header-profile .header-notification button{
+        font-size: 14px;
+        padding: 10px 8px 10px 8px;
+    }
+    .header .header-profile .header-notification .notification-btn span{
+        padding: 0px 3px;
+        top: -4px;
+        left: 23px;
+    }
+    .header .header-profile .header-pro-details{
+        padding: 8px 12px;
+        align-items: center;
+    }
+    .header .header-profile .header-pro-details .pro-name .pro-identity{
+        font-size: 12px;
+    }
+    .header .header-profile .header-pro-details .pro-name .pro-type{
+        display: none;
+    }
+    .header .header-profile .header-pro-details img{
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+    }
+    .card-1{
+        order: -8;
+    }
+    .card-2{
+        order: -9;
+    }
+    .card-3{
+        order: -10;
+    }
+    .card-1 .expenses-desc,
+    .card-2 .income-desc,
+    .card-3 .current-balance-desc{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    .activity{
+        order: -7;
+        padding: 16px;
+    }
+    .activity .activity-title h3{
+        font-size: 16px;
+    }
+
+    .activity .activity-cards .activity-card1-details .card-details,
+    .activity .activity-cards .activity-card2-details .card2-details{
+        flex: 1; 
+    }
+    .activity .activity-cards .activity-card1-details .card-details span,
+    .activity .activity-cards .activity-card2-details .card2-details span{
+        display:block;
+    }
+    .transformation{
+        padding: 16px;
+    }
+    .transformation .transformation-title h3{
+        font-size: 16px;
+    }
+    .transformation .transformation-title .less{
+        font-size: 8px;
+    }
+    .transformation .transformation-table td {
+        padding: 10px 6px;
+    }
+    .transformation .transformation-table td .user-info{
+        gap: 8px;
+    }
+    .transformation .transformation-title span,
+    .transformation .transformation-table th,
+    .transformation .transformation-table td .user-info .user-name,
+    .transformation .transformation-table .full-date,
+    .transformation .transformation-table td .user-money,
+    .transformation .transformation-table td .user-info .food,
+    .transformation .transformation-table td .user2-money,
+    .transformation .transformation-table td .user-info .shop,
+    .transformation .transformation-table td .user-info .fuel,
+    .transformation .transformation-table td .user-info .film,
+    .transformation .transformation-table td .user-info .fit,
+    .transformation .transformation-table td .user-info .course{
+        font-size: 12px;
+    }
+    .over-view .over-view-card-active .over-view-card-active-details,
+    .over-view .over-view-cards .over-view-card-templete1 .templete1-info,
+    .over-view .over-view-cards .over-view-card-templete2 .templete2-info,
+    .over-view .over-view-cards .over-view-card-templete3 .templete3-info,
+    .over-view .over-view-cards .over-view-card-templete4 .templete4-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .payment .payment-cards .parent{
+        width: 100%;
+    }
+}
+
+/* Styles for medium devices */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    body{
+        overflow-x: hidden;
+    }
+    .header-sidebar-toggle{
+        display: none;
+    }
+    .main-container{
+        grid-template-areas: 
+        "header header header header header header"
+        "card3 card3 card2 card2 card1 card1"
+        "active active active encome encome encome"
+        "table table table table table table"
+        "invo invo invo summary summary summary"
+        "view view view payment payment payment";
+    }
+    .card-1 .expenses-desc,
+    .card-2 .income-desc,
+    .card-3 .current-balance-desc{
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+    .activity .activity-cards .activity-card1-details .card-details,
+    .activity .activity-cards .activity-card2-details .card2-details{
+        flex: 1; 
+    }
+    .activity .activity-cards .activity-card1-details .card-details span,
+    .activity .activity-cards .activity-card2-details .card2-details span{
+        display:block;
+    }
+}
+
+/* Styles for large devices */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    body{
+        overflow-x: hidden;
+    }
+    .header-sidebar-toggle{
+        display: none;
+    }
+    .main-container{
+        grid-template-areas: 
+        "header header header header header header"
+        "card3 card3 card2 card2 card1 card1"
+        "active active active encome encome encome"
+        "table table table table table table"
+        "invo invo invo summary summary summary"
+        "view view view payment payment payment";
+    }
+    .activity .activity-cards .activity-card1-details .card-details,
+    .activity .activity-cards .activity-card2-details .card2-details{
+        flex: 1; 
+    }
+    .activity .activity-cards .activity-card1-details .card-details span,
+    .activity .activity-cards .activity-card2-details .card2-details span{
+        display:block;
+    }
+    .over-view .over-view-card-active .over-view-card-active-details,
+    .over-view .over-view-cards .over-view-card-templete1 .templete1-info,
+    .over-view .over-view-cards .over-view-card-templete2 .templete2-info,
+    .over-view .over-view-cards .over-view-card-templete3 .templete3-info,
+    .over-view .over-view-cards .over-view-card-templete4 .templete4-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .over-view .over-view-cards .templetes{
+        padding: 22px;
+        margin-bottom: 18px;
+    }
+    .payment .payment-cards .parent{
+        width: 100%;
+    }
+}
+
+/* Styles for extra large devices */
+@media only screen and (min-width: 1200px) {
+    body{
+        overflow-x: hidden;
+    }
+    .header-sidebar-toggle{
+        display: none;
+    }
+    .payment .payment-cards .parent{
+        width: 100%;
+    }
+}
